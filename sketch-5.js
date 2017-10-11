@@ -31,8 +31,6 @@ function draw() {
   bounce(circle);
   bounce(circle2);
 	
-	keyPressed(circle);
-	keyPressed(circle2);
 }
 
 function paint(circle) {
@@ -46,17 +44,18 @@ function move(circle) {
 
 function bounce(circle) {
   if (circle.x > width || circle.x < 0) {
-    circle.vx = - circle.vx;
+    circle.vx =- circle.vx;
   }
   if (circle.y > height || circle.y < 0) {
-    circle.vy = - circle.vy;
+    circle.vy =- circle.vy;
   }
 }
 
 function keyPressed() {
   if (keyCode === UP_ARROW) {
-    circle.vy=+10;
+    circle.vy += 2;
+		circle2.vy += 2;
   } else if (keyCode === DOWN_ARROW) {
-    circle.vy=-10;
+    circle.vy -= 2;
+		circle.vy -= 2;
   }
-}
