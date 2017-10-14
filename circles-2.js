@@ -1,8 +1,8 @@
-var sizes = [40, 70, 90, 30, 60];
-var h=[20,40,80,160,320];
+var sizes = [40, 70, 90, 30, 60,20,35,75];
+var h=[5,10,20,40,80,160,320];
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(1000, 600);
   background(0);
 
   noStroke();
